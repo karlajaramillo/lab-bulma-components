@@ -1,5 +1,6 @@
 import 'bulma/css/bulma.css';
 import React from 'react';
+import CoolButton from '../coolButton/CoolButton';
 
 function Navbar() {
     return(
@@ -27,12 +28,20 @@ function Navbar() {
     <div className="navbar-end">
       <div className="navbar-item">
         <div className="buttons">
-          <a className="button is-primary">
+          {/* <a className="button is-primary">
             Log In
           </a>
           <a className="button is-info">
             Sign Up
-          </a>
+          </a> */}
+          <CoolButton  
+            class="button is-rounded my-class is-info is-small"
+            name="Log In"
+        />
+        <CoolButton 
+            class="button is-small is-primary"
+            name="Sign Up"
+        />
         </div>
       </div>
     </div>
