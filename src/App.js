@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from './navbar/Navbar';
 import FormField from './formField/FormField';
 import CoolButton from './coolButton/CoolButton';
+import Signup from './signup/Signup';
+import Message from './message/Message';
 
 const App = () => {
   return (
@@ -11,15 +13,16 @@ const App = () => {
       <hr/>
       <FormField 
         label="Name" 
-        text="text" 
+        type="text" 
         placeholder="e.g. Alex Smith"
       />
       <FormField 
         label="Email" 
-        text="email" 
+        type="email" 
         placeholder="e.g. alexsmith@gmail.com"
       />
-
+      <Message />
+      <Signup />
     </div>
   )
 };
